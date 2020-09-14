@@ -38,26 +38,6 @@ public class SimpleAuthSample
 		
 		// This sample order contains two line items.
 		request.put( "item_0_unitPrice", "12.34" );
-		request.put( "item_1_unitPrice", "56.78" );
-	// Add optional fields here according to your business needs.
-	// For information about processing the reply,
-	// see "Using the Decision and Reason Code Fields," page 129.
-		try{
-			//HashMap reply = (HashMap) Client.runTransaction( request, props );
-			System.out.println("");
-		}
-		catch (Exception e) {
-			
-		}
-			
-		
-	}
-
-	
-
-	private static void handleCriticalException(Exception e, HashMap request) {
-		// TODO Auto-generated method stub
-				System.out.println(e.getMessage());
-		
+		request.put( "item_1_unitPrice", "56.78" );		
 	}
 }
